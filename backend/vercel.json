@@ -3,15 +3,14 @@
     "builds": [
 
       { 
-            "src": "*.js", 
+            "src": "./app.js", 
             "use": "@vercel/node" 
       }
     ],
     "routes": [
         { 
-            "src": "/", 
-            "dest": "/config/db.js",
-            "methods": ["POST","GET"]
+            "src": "/(.*)", 
+            "dest": "/"
         }
     ]
 }
