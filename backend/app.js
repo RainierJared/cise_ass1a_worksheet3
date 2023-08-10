@@ -10,14 +10,6 @@ app.use(cp());
 //Connect Databse
 connectDB();
 
-app.use(cors({
-    origin: ["https://mern-vercel-sepia.vercel.app"],
-    methods: ["POST", "GET"],
-    credentials: true
-})
-);
-
-
 //For the Books
 const books = require('./routes/api/books');
 
