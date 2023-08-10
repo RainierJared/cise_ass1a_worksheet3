@@ -1,6 +1,6 @@
 // app.js
 const express = require('express');
-const connectDB = require('./config/db');
+const connectDB = require('https://cise-ass1a-worksheet3-nu.vercel.app/config/db');
 const cp = require('cookie-parser');
 const jwt = require('jsonwebtoken');
 const cors = require('cors');
