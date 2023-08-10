@@ -11,7 +11,7 @@ app.use(cp());
 connectDB();
 
 app.use(cors({
-    origin: ["https://cise-ass1a-worksheet3-nu.vercel.app"],
+    origin: ["https://mern-vercel-sepia.vercel.app"],
     methods: ["POST", "GET"],
     credentials: true
 })
