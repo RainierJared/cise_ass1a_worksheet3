@@ -10,6 +10,13 @@ app.use(cp());
 //Connect Databse
 connectDB();
 
+app.use(cors({
+    origin: ["https://cise-ass1a-worksheet3-nu.vercel.app"],
+    methods: ["POST", "GET"],
+    credentials: true
+})
+);
+
 //For the Books
 const books = require('./routes/api/books');
 
