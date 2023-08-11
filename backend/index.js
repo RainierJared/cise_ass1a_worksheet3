@@ -12,7 +12,6 @@ const app = express();
 app.use(cp());
 //Connect Databse
 connectDB();
-
 app.use(cors({
     origin: ["https://mern-vercel-sepia.vercel.app"],
     methods: ["POST", "GET"],
