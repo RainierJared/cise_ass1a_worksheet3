@@ -2,7 +2,7 @@
  process.env.NODE_CONFIG_DIR = './config'
  const mongoose = require('mongoose');
  const config = require('config');
- const db = config.get('mongoURI');
+ const db = config.get('mongodb+srv://qqp2244:jcr7wdgxav019i9g@rainierjareddb.x9og32u.mongodb.net/?retryWrites=true&w=majority');
  
  const connectDB = async () => {
    try {
