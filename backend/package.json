@@ -9,7 +9,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "app": "nodemon index.js",
-    "start": "node index.js"
+    "start": "MONGODB_URI=mongodb+srv://qqp2244:jcr7wdgxav019i9g@rainierjareddb.x9og32u.mongodb.net/?retryWrites=true&w=majority node index.js"
   },
   "repository": {
     "type": "git",
