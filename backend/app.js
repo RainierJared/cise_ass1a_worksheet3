@@ -5,6 +5,9 @@ const cp = require('cookie-parser');
 const jwt = require('jsonwebtoken');
 const cors = require('cors');
 
+//For the Books
+const books = require('./routes/api/books');
+
 const app = express();
 app.use(cp());
 //Connect Databse
@@ -16,9 +19,6 @@ app.use(cors({
     credentials: true
 })
 );
-
-//For the Books
-const books = require('./routes/api/books');
 
 //For cors
 app.use(cors({origin:true, credentials: true}));
@@ -63,5 +63,6 @@ app.get('/', (req, res) => res.send('Hello world!'));
 
 // use Routes
 app.use('/api/books', books);
+
 const port = process.env.PORT || 8082;
 app.listen(port, () => console.log(`Server running on port ${port}`));
