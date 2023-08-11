@@ -5,8 +5,6 @@ const cp = require('cookie-parser');
 const jwt = require('jsonwebtoken');
 const cors = require('cors');
 
-process.env.NODE_CONFIG_DIR = './config'
-
 //For the Books
 const books = require('./routes/api/books');
 
